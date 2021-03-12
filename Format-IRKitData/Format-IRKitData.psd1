@@ -8,7 +8,7 @@
     # RootModule = ''
 
     # Version number of this module.
-    ModuleVersion     = '1.0.0'
+    ModuleVersion     = '1.1.0'
 
     # Supported PSEditions
     # CompatiblePSEditions = @()
@@ -65,7 +65,10 @@
     NestedModules     = @('Format-IRkitData.psm1')
 
     # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
-    FunctionsToExport = @('Read-CustomerCodeAndData_fromNECformated_IRKitGetData', 'Convert-IRKitPostData_OnNECFomat_fromCustomerCodeAndData')
+    FunctionsToExport = @(
+        'Read-CustomerCodeAndData_fromNECformated_IRKitGetData',
+        'Convert-IRKitPostData_OnNECFomat_fromCustomerCodeAndData'
+    )
 
     # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
     # CmdletsToExport = @()
