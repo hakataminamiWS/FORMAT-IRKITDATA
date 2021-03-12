@@ -1,6 +1,6 @@
 #Requires -Version 7.1
 
-function global:convertTo-NearestT {
+function convertTo-NearestT {
     param (
         [Int]$a
     ) 

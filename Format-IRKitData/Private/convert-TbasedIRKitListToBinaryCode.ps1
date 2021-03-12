@@ -1,7 +1,7 @@
 #Requires -Version 7.1
 
-function global:convert-TbasedIRKitListToBinaryCode {
-    # IRKit 2T(T: modulation unit) based data [1,1] -> 0 or [1,3] -> 1.
+function convert-TbasedIRKitListToBinaryCode {
+    # IRKit T(T: modulation unit) based data [1,1] -> 0 or [1,3] -> 1.
     # example: [1,1,1,3] -> "01", [1,4,1,1] -> null
     param (
         [int[]]$list_T

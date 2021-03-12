@@ -1,6 +1,6 @@
 #Requires -Version 7.1
 
-function global:compare-BitStringAToBitReversedStringB {
+function compare-BitStringAToBitReversedStringB {
     param (
         [string]$a, [string]$b
     ) 

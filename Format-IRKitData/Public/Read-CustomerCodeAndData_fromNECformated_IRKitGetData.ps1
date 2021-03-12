@@ -20,6 +20,7 @@
 #>
 function global:Read-CustomerCodeAndData_fromNECformated_IRKitGetData {
     [CmdletBinding()]
+    [OutputType([PSCustomObject])]
     Param (
         [Parameter(ValueFromPipeline = $True)]$st
     )

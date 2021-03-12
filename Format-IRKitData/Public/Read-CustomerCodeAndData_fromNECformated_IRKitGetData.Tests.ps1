@@ -5,6 +5,11 @@ BeforeDiscovery {
 BeforeAll {
     . $PSCommandPath.Replace('.Tests.ps1', '.ps1')
     function conv([int[]]$intar) { "[" + (($intar | ForEach-Object { $_ * 2 * 562 }) -join ",") + ",1124]" }
+
+    $testModule = "Format-IRKitData"
+    Get-Module $testModule | Remove-Module -Force
+    Import-Module (Get-ChildItem　(Get-Item $PSScriptRoot).Parent |
+        Where-Object { $_.Name -match $testModule } ) -Force
 }
 
 Describe "Read-CustomerCodeAndData_fromNECformated_IRKitGetData" {

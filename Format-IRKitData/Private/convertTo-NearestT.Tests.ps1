@@ -2,7 +2,7 @@ BeforeAll {
     . $PSCommandPath.Replace('.Tests.ps1', '.ps1')
 }
 
-Describe "convetTo-NearestT" {
+Describe "convertTo-NearestT" {
     $T = 562
     $testCases = @(
         @{ inputInt        = [math]::Truncate($T / 2) - 1
